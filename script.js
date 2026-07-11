@@ -1,7 +1,7 @@
 let playerScore = 0;
 let computerScore = 0;
 
-const choices = ["rock","paper","scissors"];
+const choices = ["Rock","Paper","Scissors"];
 const result = document.getElementById("result");
 function getComputerChoice(){
 
@@ -19,9 +19,9 @@ function playGame(playerChoice){
         result.innerText="It's a Tie!";
     }
     else if(
-    playerChoice==="rock" && computerChoice==="scissors" ||
-    playerChoice==="paper" && computerChoice==="rock" ||
-    playerChoice==="scissors" && computerChoice==="paper"
+    playerChoice==="Rock" && computerChoice==="Scissors" ||
+    playerChoice==="Paper" && computerChoice==="Rock" ||
+    playerChoice==="Scissors" && computerChoice==="Paper"
     ){
         playerScore++;
         result.innerText="You Win!";
@@ -44,24 +44,24 @@ document.getElementById("computerChoice").innerText =
 
 
 
-document.getElementById("rock")
+document.getElementById("Rock")
 .addEventListener("click",function(){
 
-playGame("rock");
+playGame("Rock");
 
 });
 
-document.getElementById("scissors")
+document.getElementById("Scissors")
 .addEventListener("click",function(){
 
-playGame("scissors");
+playGame("Scissors");
 
 });
 
-document.getElementById("paper")
+document.getElementById("Paper")
 .addEventListener("click",function(){
 
-playGame("paper");
+playGame("Paper");
 
 });
 
